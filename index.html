@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart || Javascript</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/boostrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
   <body>
     <div class="app-container">
@@ -73,9 +73,27 @@
         </div>
       </main>
     </div>
-    <div class="product-list">
+    <div class="products-list">
       <div class="products">
-        <!-- render cart items here -->
+        <!--
+        <div class="item">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="/img/t1.png" alt="t-shirt 1">
+            </div>
+            <div class="desc">
+              <h2>T-shirt 1</h2>
+              <h2><small>£</small>29.99</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, expedita.</p>
+            </div>  
+            <div class="add-to-wishlist">
+              <img src="/icons/heart.png" alt="add to wish list">
+            </div>
+            <div class="add-to-cart">
+              <img src="/icons/bag-plus.png" alt="add to cart">
+            </div>
+          </div>
+        </div>-->
       </div>
       <div class="cart">
         <div class="cart-header">
@@ -84,14 +102,38 @@
           <div class="column3">Units</div>
         </div>
         <div class="cart-items">
-          <!-- render cart items here -->
+          <!-- 
+          <div class="cart-item">
+            <div class="item-info">
+              <img src="/img/t1.png" alt="t-shirt 1">
+              <h4>T-shirt 1</h4>
+            </div>
+            <div class="unit-price">
+              <small>£</small>29.99
+            </div>
+            <div class="units">
+              <div class="btn minus">-</div>
+              <div class="number">1</div>
+              <div class="btn plus">+</div>
+            </div>
+          </div>-->
         </div>
         <div class="cart-footer">
-          <div class="subtotal">Subtotal (0items: £0</div>
-          <div class="checkout">Proceed to checkout</div>
+          <div class="subtotal">Subtotal (0 items): £0</div>
+          <div class="checkout">Proceed to Checkout</div>
         </div>
       </div>
     </div>
+    <script>
+      const porductsListEl = document.querySelector(".products-list")
+      const seeMoreBtn = document.querySelector(".see-more-btn")
+
+      seeMoreBtn.addEventListener('click', () => {
+        porductsListEl.scrollIntoView({behavior: "smooth"})
+      })
+    </script>
+    
+    <script src="/js/products.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

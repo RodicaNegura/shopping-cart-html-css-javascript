@@ -124,7 +124,7 @@ header nav ul li.home a img {
 .total-items-in-cart {
   margin-left: 10px;
   padding: 10px;
-  background-color: rgb(251, 147, 37);
+  background-color: rgb(242, 255, 58);
   border-radius: 10px;
 }
 
@@ -226,7 +226,7 @@ main .model {
 .model .product img {
   width: 100%;
 }
-/*
+
 .products-list {
   width: 100vw;
   height: 100vh;
@@ -243,7 +243,7 @@ main .model {
 }
 
 .products img {
-  width: 200px;
+  width: 150px;
 }
 
 .products .item {
@@ -257,10 +257,12 @@ main .model {
 
 .products .item .item-container {
   width: 250px;
-  height: 90%;
+  height: 100%;
   background-color: #000;
   border-radius: 25px;
   position: relative;
+  margin: 10px;
+  padding: 0;
 }
 
 .products .item .item-container .item-img {
@@ -277,7 +279,12 @@ main .model {
 .products .item .item-container .desc {
   width: 100%;
   color: #fff;
-  padding: 10px;
+  padding: 1px;
+  text-align: center;
+}
+
+.products .item .item-container p {
+  text-align: center;
 }
 
 .products .item .item-container .add-to-cart {
@@ -385,6 +392,7 @@ main .model {
   font-weight: bold;
   cursor: pointer;
   -webkit-user-select: none;
+  user-select: none;
 }
 
 .cart-footer {
